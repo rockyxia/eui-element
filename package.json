@@ -1,7 +1,7 @@
 {
 	"name": "eui-element",
 	"description": "EUI-Element基于element二次封装的组件",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"author": "rockyxia",
 	"private": false,
 	"main": "lib/euiElement.common.js",
@@ -11,6 +11,12 @@
 		"element-ui",
 		"vue"
 	],
+	"homepage": "https://github.com/rockyxia/eui-element#eui-element",
+	"bugs": "https://github.com/rockyxia/eui-element/issues",
+	"repository": {
+    "type": "git",
+    "url": "git@github.com:rockyxia/eui-element.git"
+  },
 	"license": "MIT",
 	"scripts": {
 		"serve": "vue-cli-service serve",

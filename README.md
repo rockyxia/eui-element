@@ -15,10 +15,10 @@ npm install eui-element -S
 在 main.js 文件中引入插件并注册
 
 ```
-# main.js
 import Vue from 'vue'
-
 import euiElement from 'eui-element'
+import 'eui-element/lib/euiElement.css'
+
 Vue.use(euiElement)
 ```
 
@@ -34,6 +34,8 @@ Vue.use(euiElement)
 
 ## 更新日志
 
-### v0.1.0
+### v0.1.1
+2018-11-16：使用方法增加css引入说明
 
+### v0.1.0
 2018-11-15：框架搭建，继承 button,button-group,dialog 三个组件
