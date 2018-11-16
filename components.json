@@ -1,0 +1,4 @@
+{
+  "eui-modal": "./packages/eui-modal",
+  "index": "./src/index.js"
+}
