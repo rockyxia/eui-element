@@ -14,14 +14,14 @@ Vue.use(Button)
 
 export default {
   name: 'EuiButton',
-  inject: {
-    elForm: {
-      default: ''
-    },
-    elFormItem: {
-      default: ''
-    }
-  },
+  // inject: {
+  //   elForm: {
+  //     default: ''
+  //   },
+  //   elFormItem: {
+  //     default: ''
+  //   }
+  // },
   props: {
     type: {
       type: String,
@@ -43,17 +43,17 @@ export default {
     round: Boolean,
     circle: Boolean
   },
-  computed: {
-    _elFormItemSize() {
-      return (this.elFormItem || {}).elFormItemSize;
-    },
-    buttonSize() {
-      return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
-    },
-    buttonDisabled() {
-      return this.disabled || (this.elForm || {}).disabled;
-    }
-  },
+  // computed: {
+  //   _elFormItemSize() {
+  //     return (this.elFormItem || {}).elFormItemSize;
+  //   },
+  //   buttonSize() {
+  //     return this.size || this._elFormItemSize || (this.$ELEMENT || {}).size;
+  //   },
+  //   buttonDisabled() {
+  //     return this.disabled || (this.elForm || {}).disabled;
+  //   }
+  // },
   methods: {
     handleClick(evt) {
       this.$emit('click', evt);

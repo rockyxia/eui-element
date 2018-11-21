@@ -1,44 +1,39 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-
-    <HelloWorld msg="这是eui-element一个简易的演示" />
-    <div>
-
-      <demo-button />
-      <demo-dialog />
-
-    </div>
+  <div style="height:100%">
+    <eui-container style="height:100%">
+      <eui-header height="40">
+        <header-model></header-model>
+      </eui-header>
+      <eui-container>
+        <eui-aside width="200px">
+          <menu-model></menu-model>
+        </eui-aside>
+        <eui-main class="markdown-content">
+          <router-view></router-view>
+        </eui-main>
+      </eui-container>
+    </eui-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import DemoButton from './components/button.vue'
-import DemoDialog from './components/dialog.vue'
+  import HeaderModel from './components/header'
+  import MenuModel from './components/menu'
 
-export default {
-  name: 'app',
-  data() {
+  export default {
+    name: 'app',
+    data() {
       return {
-        dialogVisible: false
+        // dialogVisible: false
       };
     },
-  components: {
-    HelloWorld,
-    DemoButton,
-    DemoDialog
+    components: {
+      HeaderModel,
+      MenuModel
+    }
   }
-}
 </script>
 
 <style>
-#app {
-	font-family: 'Avenir', Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-align: center;
-	color: #2c3e50;
-	margin-top: 60px;
-}
 </style>
+

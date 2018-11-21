@@ -1,7 +1,7 @@
 {
 	"name": "eui-element",
 	"description": "EUI-Element基于element二次封装的组件",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"author": "rockyxia",
 	"private": false,
 	"main": "lib/euiElement.common.js",
@@ -14,9 +14,9 @@
 	"homepage": "https://github.com/rockyxia/eui-element#eui-element",
 	"bugs": "https://github.com/rockyxia/eui-element/issues",
 	"repository": {
-    "type": "git",
-    "url": "git@github.com:rockyxia/eui-element.git"
-  },
+		"type": "git",
+		"url": "git@github.com:rockyxia/eui-element.git"
+	},
 	"license": "MIT",
 	"scripts": {
 		"serve": "vue-cli-service serve",
@@ -36,9 +36,16 @@
 		"babel-plugin-component": "^1.1.1",
 		"eslint": "^5.8.0",
 		"eslint-plugin-vue": "^5.0.0-0",
+		"highlight": "^0.2.4",
+		"markdown-it": "^8.4.2",
+		"markdown-it-anchor": "^5.0.2",
+		"markdown-it-container": "^2.0.0",
 		"node-sass": "^4.9.2",
 		"sass-loader": "^7.0.3",
+		"transliteration": "^1.6.6",
 		"vue-cli-plugin-element": "^1.0.0",
+		"vue-markdown-loader": "^2.4.1",
+		"vue-router": "^3.0.1",
 		"vue-template-compiler": "^2.5.17"
 	},
 	"eslintConfig": {

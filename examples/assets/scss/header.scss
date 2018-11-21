@@ -1,0 +1,18 @@
+.el-header{
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.header-model{
+  height: 50px;
+  line-height: 50px;
+  .info{
+    display: inline-block;
+    font-size: 20px;
+    color: #333;
+    font-weight: normal;
+  }
+  span {
+    margin-left:12px;
+    color:#666;
+    font-size:14px;
+  }
+}
